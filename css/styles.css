@@ -10990,15 +10990,15 @@ section.resume-section .resume-section-content {
   }
   .portfolio-item img {
     border-radius: 7px;
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+
+    transition: scale(1,1);
+    transition: transform 0.3s ease;
     -webkit-clip-path: inset(-1px);
             clip-path: inset(-1px);
+    
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+            transform:scale(.9, .9)
   }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
