@@ -10933,6 +10933,7 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  transition-duration: .8s;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
@@ -10942,17 +10943,24 @@ p.lead {
 }
 
 #resume {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 3.5rem;
-  width: 3.5rem;
-  color: #495057;
+  width: 9rem;
+  background-color: #495057;
+  color: #fff;
   font-size: 1.5rem;
   margin-right: 1.5rem;
   margin-top: 5rem;
+  border-radius: 15px;
+  transition-property: all;
+  transition-duration: .7s;
 }
-#resume #resume:hover {
-background-color: #6b38bd;
+
+#resume:hover {
+background-color: var(--bs-primary);
+color: #212529;
 }
 
 .dev-icons {
